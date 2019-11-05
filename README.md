@@ -44,7 +44,7 @@ It also has our controller inheriting from ActionController::API base instead of
     - Add the following code to your `seeds.rb` file
   ```Ruby
   100.times do
-    Song.create(title: Faker::Hipster.sentence(3), artist: Faker::Name.name, year: rand(1950..2017) )
+    Song.create(title: Faker::Hipster.sentence(word_count:3), artist: Faker::Name.name, year: rand(1950..2017) )
   end
    ```
 - **In terminal, run `rails db:seed`**
